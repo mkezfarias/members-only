@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  attr_accessor :remember_token
   before_create :assign_token
   has_secure_password
 
@@ -10,9 +11,19 @@ class User < ApplicationRecord
     Digest::SHA1.hexdigest(string).to_s
   end
 
+  def remember
+    self.assign_token
+    self.save
+  end
+  
+  def forget
+    update_attribute(:remember_digest, nil)
+  end
+  
   private
 
   def assign_token
-    self.remember_digest = User.digest(User.new_token)
+    self.remember_token = User.new_token
+    self.remember_digest = User.digest(remember_token)
   end
 end
