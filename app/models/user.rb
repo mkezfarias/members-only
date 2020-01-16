@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :posts
   attr_accessor :remember_token
   before_create :assign_token
   has_secure_password
@@ -12,7 +13,7 @@ class User < ApplicationRecord
   end
 
   def remember
-    self.assign_token
+    assign_token
     self.save
   end
   

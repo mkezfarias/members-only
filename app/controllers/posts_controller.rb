@@ -1,10 +1,11 @@
 class PostsController < ApplicationController
+  #before_action :logged_in_user, only: [:new, :create]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.order('created_at DESC')
   end
 
   # GET /posts/1
@@ -24,11 +25,11 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.new(post_params)
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
@@ -62,13 +63,20 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+  # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:user_id, :title, :body)
+      params.require(:post).permit( :title, :body)
     end
+
+  def logged_in_user
+    unless logged_in?
+      flash[:danger] = 'Please, log in'
+      redirect_to login_url
+    end
+  end
 end
