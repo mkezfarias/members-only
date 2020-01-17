@@ -11,14 +11,15 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
+    <%= form.label :gossip, class: "content is-medium" %>
+    <%= form.text_area :gossip, id: :post_body, placeholder: "There's another person inside kevin working him with controls", class: "content is-small", style: "width: 300px;" %>
   </div>
 
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :post_body %>
+    <%= form.label :reaction, class: "content is-medium" %>
+    <%= form.text_field :reaction, id: :post_title, placeholder: "oh god whyy!", class: "content is-small", style: "width: 300px;" %>
   </div>
 
   <div class="actions">
