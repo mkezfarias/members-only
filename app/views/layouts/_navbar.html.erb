@@ -16,6 +16,7 @@
           <% if logged_in? %>
             <%= link_to 'Sign out', logout_path, method: :delete, class: 'button is-light' %>          
           <% else %>
+            <%= link_to 'Sign up', signup_path, class: 'button is-primary'  %>
             <%= link_to 'Sign in', login_path, class: 'button is-light' %>
           <% end %>
         </div>
