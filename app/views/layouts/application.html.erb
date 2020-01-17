@@ -13,6 +13,9 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
     <%= render 'layouts/navbar' %>
+    <% flash.each do |name, msg| %>
+      <p class="notification is-success" style="margin-top: 110px; margin-bottom: -100px;"><%= msg %></p>
+    <% end %>
     <section class='section section-padding-large section1'>
     <%= yield %>
     </section>

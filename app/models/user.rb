@@ -4,23 +4,23 @@ class User < ApplicationRecord
   before_create :assign_token
   has_secure_password
 
-  def User.new_token
+  def self.new_token
     SecureRandom.urlsafe_base64
   end
 
-  def User.digest(string)
+  def self.digest(string)
     Digest::SHA1.hexdigest(string).to_s
   end
 
   def remember
     assign_token
-    self.save
+    save
   end
-  
+
   def forget
     update_attribute(:remember_digest, nil)
   end
-  
+
   private
 
   def assign_token

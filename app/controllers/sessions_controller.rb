@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-  def new
-  end
+  def new; end
 
   def create
     user = User.find_by(email: session_params[:email])
@@ -10,19 +9,20 @@ class SessionsController < ApplicationController
       remember user
       redirect_to root_path
     else
-      flash.now[:danger] = "Try again"
+      flash.now[:danger] = 'Try again'
       render :new
     end
   end
-  
+
   def delete
     log_out if logged_in?
+    flash[:success] = "You're logged out"
+    redirect_to root_path
   end
-  
+
   private
-  
+
   def session_params
-    params.require(:session).permit(:email,:password)
+    params.require(:session).permit(:email, :password)
   end
-  
 end
