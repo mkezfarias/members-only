@@ -1,0 +1,26 @@
+<nav class="navbar is-fixed-top has-background-black" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <%= link_to root_path do %>
+      <%= image_tag "gslogo.PNG", class: "logo" %>
+    <% end %>
+  </div>
+
+
+   <div class="phrase">Post what you want anonimously, <br>only other members can see who said it.</div>
+     
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <%= link_to 'New Post', new_post_path, class: 'button has-background-danger has-text-white' %>
+          <% if logged_in? %>
+            <%= link_to 'Sign out', logout_path, method: :delete, class: 'button is-light' %>          
+          <% else %>
+            <%= link_to 'Sign up', signup_path, class: 'button is-primary'  %>
+            <%= link_to 'Sign in', login_path, class: 'button is-light' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
