@@ -2,22 +2,22 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/camfilho/micro-reddit">
+  <a href="https://github.com/mkezmkez/members-only/tree/development">
     <img src="https://github.com/mkezmkez/appleclone/raw/master/assets/microverse-logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Ruby on Rails. Building with Active Record - Micro Reddit </h3>
+  <h3 align="center">Ruby on Rails. Authentication - Members only </h3>
 
   <p align="center">
 
 <br>
-  <a href="https://github.com/camfilho/micro-reddit"><strong>Explore the docs »</strong></a>
+  <a href="https://github.com/mkezmkez/members-only/tree/development"><strong>Explore the docs »</strong></a>
 <br>
 <br> 
-  <!--  <a href="https://raw.githack.com/mkezmkez/bootstrap/boot/index.html">View Demo</a>
+  <a href="https://raw.githack.com/mkezmkez/bootstrap/boot/index.html">View Demo</a>
 <br> 
--->
-    <a href="https://github.com/camfilho/micro-reddit/issues">Request Feature</a>
+<br> 
+    <a href="https://office-gossip.herokuapp.com/">Request Feature</a>
   </p>
 
 
@@ -50,19 +50,20 @@ Send to Code Review December 10th 2019
 
 <br>
 <br>
-For more details about the Project and it's requirements go to <a href="https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails"> The Odin Project</a>
+For more details about the Project and it's requirements go to <a href="https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication"> The Odin Project</a>
 
 ### Built With
 
 * [RUBY](https://ruby-doc.org/)
 * [RAILS](https://rubyonrails.org/)
+* [BULMA]
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-Clone or fork the repo <https://github.com/camfilho/micro-reddit>
+Clone or fork the repo <https://github.com/mkezmkez/members-only/tree/development>
 
 
 <!-- CONTRIBUTING --> 
