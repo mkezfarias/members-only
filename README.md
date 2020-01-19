@@ -14,10 +14,10 @@
   <a href="https://github.com/mkezmkez/members-only/tree/development"><strong>Explore the docs »</strong></a>
 <br>
 <br> 
-  <a href="https://raw.githack.com/mkezmkez/bootstrap/boot/index.html">View Demo</a>
+  <a href="https://office-gossip.herokuapp.com/">View Demo</a>
 <br> 
-<br> 
-    <a href="https://office-gossip.herokuapp.com/">Request Feature</a>
+--
+    <a href="https://github.com/mkezmkez/members-only/issues  ">Request Feature</a>
   </p>
 
 
