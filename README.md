@@ -5,7 +5,7 @@
   <a href="https://github.com/mkezmkez/members-only/tree/development">
     <img src="https://github.com/mkezmkez/appleclone/raw/master/assets/microverse-logo.png" alt="Logo" width="80" height="80">
   </a>
-<img href="https://imgur.com/kcJ2rTU.png">
+
   <h3 align="center">Ruby on Rails. Authentication - Members only </h3>
 
   <p align="center">
@@ -20,7 +20,7 @@
     <a href="https://github.com/mkezmkez/members-only/issues  ">Request Feature</a>
   </p>
 
-
+<div> <img href="https://imgur.com/kcJ2rTU.png"> </div>
 
 
 <!-- TABLE OF CONTENTS -->
