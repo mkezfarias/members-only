@@ -20,7 +20,7 @@
     <a href="https://github.com/mkezmkez/members-only/issues  ">Request Feature</a>
   </p>
 
-<div> <img href="https://imgur.com/kcJ2rTU.png"> </div>
+<div> <img src="https://imgur.com/kcJ2rTU.png"> </div>
 
 
 <!-- TABLE OF CONTENTS -->
