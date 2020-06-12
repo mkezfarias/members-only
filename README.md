@@ -71,8 +71,14 @@ $ git clone git@github.com:mkezmkez/members-only.git
 CD into the folder
 ````
 $ cd members-only
+
+$ bundle install
 ````
-To run it in your localserver use this line in the terminal
+Run the tests with the following command
+````
+$ bundle exec rspec
+````
+Get it working in your localserver use this line in the terminal
 ````
 $ rails s
 ````
