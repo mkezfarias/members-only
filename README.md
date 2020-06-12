@@ -81,9 +81,7 @@ It is recommended to deploy in Heroku, you'll need to open a heroku account in h
 <!-- UPCOMING FEATURES -->
 ## Upcoming features
 * Follow users feature
-* Recommendation algorithms for most popular memes
-* Multi-category for different types of memes
-
+* Anonymous Comments for each post
 
 <!-- CONTRIBUTING --> 
 ## Contributing
