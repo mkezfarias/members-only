@@ -29,6 +29,7 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Getting Started](#getting-started)
+* [Upcomnig Features](#upcoming-features)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -56,14 +57,32 @@ For more details about the Project and it's requirements go to <a href="https://
 
 * [RUBY](https://ruby-doc.org/)
 * [RAILS](https://rubyonrails.org/)
-* [BULMA]
+* [BULMA](https://bulma.io/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-Clone or fork the repo <https://github.com/mkezmkez/members-only/tree/development>
+Clone the repo from the terminal in your projects folder
+````
+$ git clone git@github.com:mkezmkez/members-only.git
+````
+CD into the folder
+````
+$ cd members-only
+````
+To run it in your localserver use this line in the terminal
+````
+$ rails s
+````
+It is recommended to deploy in Heroku, you'll need to open a heroku account in herokuapp.com
+
+<!-- UPCOMING FEATURES -->
+## Upcoming features
+* Follow users feature
+* Recommendation algorithms for most popular memes
+* Multi-category for different types of memes
 
 
 <!-- CONTRIBUTING --> 
@@ -90,7 +109,6 @@ No licenses required as project was developed in educational eviroment.
 
 Luis Puente - [@mkezmkez](https://twitter.com/mkezkmez)
 Carlos De Medeiros [@camfilho](https://twitter.com/camfilho)
-Project Link: [github.com/mkezmkez/ruby-enumerables](https://github.com/camfilho/micro-reddit)
 
 
 
