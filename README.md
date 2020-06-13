@@ -43,7 +43,9 @@
 We can build complex apps with Rails, adding databases using merely a few lines of code. By understanding Active Record, we can easily create and manipulate data and even store it in the database without actually writing any SQL commands.
 
 ----
-This is the first collaborative project on the "Ruby on Rails" path from the Microverse FullStack web developer curriculum
+This project is a rails app that allows registered users to post comments anonimously. Only other members may know who posted what. Posts can be shared on facebook keeping the secret of who really posted.
+
+A little tribute to "The Office" series' Gossip Episode
 
 <br>
 <br>
